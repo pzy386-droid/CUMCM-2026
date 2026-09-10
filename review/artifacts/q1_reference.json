@@ -1,0 +1,92 @@
+{
+  "purpose": "independent_reference_not_official_result1",
+  "lp_status": "optimal",
+  "objective_yuan": 35126.94858928963,
+  "dual_bound_yuan": 35126.948589289634,
+  "primal_dual_gap_yuan": -7.275957614183426e-12,
+  "max_primal_residual": 9.094947017729282e-13,
+  "max_dual_stationarity_residual": 0.0,
+  "no_storage_cost_yuan": 48052.046590846665,
+  "feasible_under_full_q1_rules": true,
+  "schedule_metrics": {
+    "objective_yuan": 35126.94858928963,
+    "total_grid_kwh": 59482.69899835392,
+    "total_charge_kwh": 20740.66613168725,
+    "total_discharge_kwh": 16799.939566666668,
+    "total_spill_kwh": 0.0,
+    "soc_initial_kwh": 6000.0,
+    "soc_final_kwh": 6000.0,
+    "max_energy_residual_kwh": 1.4921397450962104e-13,
+    "max_soc_residual_kwh": 8.739675649849232e-13
+  },
+  "input_sha256": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "selected_intervals": [
+    {
+      "slot": 61,
+      "interval": "10:00-10:10",
+      "grid_kwh": 0.0
+    },
+    {
+      "slot": 73,
+      "interval": "12:00-12:10",
+      "grid_kwh": 480.41245000000004
+    },
+    {
+      "slot": 85,
+      "interval": "14:00-14:10",
+      "grid_kwh": 0.0
+    },
+    {
+      "slot": 97,
+      "interval": "16:00-16:10",
+      "grid_kwh": 445.43165000000005
+    },
+    {
+      "slot": 109,
+      "interval": "18:00-18:10",
+      "grid_kwh": 531.8940499999999
+    },
+    {
+      "slot": 121,
+      "interval": "20:00-20:10",
+      "grid_kwh": 0.0
+    }
+  ],
+  "four_hour_storage": [
+    {
+      "interval": "00:00-04:00",
+      "charge_kwh": 4500.0,
+      "discharge_kwh": 0.0
+    },
+    {
+      "interval": "04:00-08:00",
+      "charge_kwh": 833.3333333333334,
+      "discharge_kwh": 6365.8412
+    },
+    {
+      "interval": "08:00-12:00",
+      "charge_kwh": 4787.964288065849,
+      "discharge_kwh": 1702.9969833333334
+    },
+    {
+      "interval": "12:00-16:00",
+      "charge_kwh": 5286.035176954732,
+      "discharge_kwh": 91.10138333333344
+    },
+    {
+      "interval": "16:00-20:00",
+      "charge_kwh": 0.0,
+      "discharge_kwh": 5780.131883333333
+    },
+    {
+      "interval": "20:00-24:00",
+      "charge_kwh": 5333.333333333334,
+      "discharge_kwh": 2859.8681166666665
+    }
+  ]
+}

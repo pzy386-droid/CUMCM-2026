@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project collaboration
+~$*
+.DS_Store
+outputs/tmp/
+review/tmp/
+node_modules/
