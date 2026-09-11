@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "scope": "automated physical, accounting, provenance, workbook, mapping and LP-bound checks",
+  "manual_review_pending": [
+    "production code",
+    "tables_q1.md contents",
+    "figures",
+    "clean environment reproduction"
+  ],
+  "metrics": {
+    "objective_yuan": 35126.94858928963,
+    "total_grid_kwh": 59482.69899835391,
+    "total_charge_kwh": 20740.66613168724,
+    "total_discharge_kwh": 16799.939566666668,
+    "total_spill_kwh": 0.0,
+    "soc_initial_kwh": 6000.0,
+    "soc_final_kwh": 6000.0,
+    "max_energy_residual_kwh": 2.2737367544323206e-13,
+    "max_soc_residual_kwh": 1.2221335055073723e-12
+  },
+  "independent_lp_bound_yuan": 35126.94858928963,
+  "gap_to_lp_bound_yuan": 0.0
+}
