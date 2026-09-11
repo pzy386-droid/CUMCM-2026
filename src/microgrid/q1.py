@@ -151,7 +151,7 @@ def run(config_path: Path, output_dir: Path, argv: list[str] | None = None) -> d
 
     metadata = {
         "schema_version": SCHEMA_VERSION,
-        "command": " ".join(argv if argv is not None else sys.argv),
+        "command": "python -m microgrid.q1 " + " ".join(argv if argv is not None else sys.argv[1:]),
         "started_utc": started,
         "elapsed_seconds": time.perf_counter() - t0,
         "solver_wall_seconds": solution.solver["wall_seconds"],
@@ -198,7 +198,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
-        summary = run(args.config, args.output, argv=[sys.argv[0], *(argv if argv is not None else sys.argv[1:])])
+        summary = run(args.config, args.output, argv=list(argv) if argv is not None else sys.argv[1:])
     except (ConfigError, InputError, SolveError, ex.ExportError) as exc:
         print(f"Q1 run failed: {exc}", file=sys.stderr)
         info = getattr(exc, "info", None)

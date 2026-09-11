@@ -22,7 +22,7 @@ def sha256(path):
 def run_dir(tmp_path_factory):
     out = tmp_path_factory.mktemp("q1run")
     before = sha256(TEMPLATE)
-    summary = q1.run(ROOT / "configs/q1.json", out, argv=["test", "--config", "configs/q1.json"])
+    summary = q1.run(ROOT / "configs/q1.json", out, argv=["--config", "configs/q1.json", "--output", str(out)])
     assert sha256(TEMPLATE) == before, "template must never be modified"
     return out, summary
 
