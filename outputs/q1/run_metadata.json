@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "command": "python -m microgrid.q1 --config configs/q1.json --output outputs/q1",
-  "started_utc": "2026-09-11T02:01:49+00:00",
-  "elapsed_seconds": 0.2922587499999736,
-  "solver_wall_seconds": 0.03269734499997412,
+  "started_utc": "2026-09-11T02:28:59+00:00",
+  "elapsed_seconds": 1.0957124029999932,
+  "solver_wall_seconds": 0.03541203500003576,
   "config_path": "configs/q1.json",
   "config": {
     "schema_version": 1,
@@ -64,9 +64,10 @@
     "numpy": "2.4.4",
     "scipy": "1.17.1",
     "openpyxl": "3.1.5",
-    "platform": "Linux-6.18.44-fc-v24-x86_64-with-glibc2.39"
+    "platform": "Linux-6.18.44-fc-v24-x86_64-with-glibc2.39",
+    "matplotlib": "3.10.9"
   },
-  "source_git_commit": "09a9480e3e6ad49d45897aa7a79f9de5a0f0624a",
+  "source_git_commit": "f29f9ea614ee55559c2d7223fee053b71166f1d0",
   "source_dirty": false,
   "input_path": "data/raw/附件1.xlsx",
   "template_path": "data/templates/result1.xlsx",
@@ -76,6 +77,9 @@
     "result1.xlsx",
     "template_mapping.csv",
     "tables_q1.md",
-    "run_metadata.json"
-  ]
+    "run_metadata.json",
+    "figures/schedule.png",
+    "figures/soc.png"
+  ],
+  "figure_note": null
 }

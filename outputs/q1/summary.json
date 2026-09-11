@@ -14,12 +14,12 @@
     "name": "scipy.optimize.milp (HiGHS)",
     "status": "optimal",
     "mip_gap": 0.0,
-    "wall_seconds": 0.03269734499997412,
+    "wall_seconds": 0.03541203500003576,
     "mip_dual_bound_yuan": 35126.94858928963,
     "mip_node_count": 1,
     "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
   },
-  "source_git_commit": "09a9480e3e6ad49d45897aa7a79f9de5a0f0624a",
+  "source_git_commit": "f29f9ea614ee55559c2d7223fee053b71166f1d0",
   "source_dirty": false,
   "selected_intervals": [
     {
