@@ -157,3 +157,14 @@ def test_cli_reports_infeasible_solve(tmp_path):
     path.write_text(json.dumps(config), encoding="utf-8")
     assert q1.main(["--config", str(path), "--output", str(tmp_path / "out")]) == 1
     assert not (tmp_path / "out" / "schedule.csv").exists()
+
+
+def test_figures_are_written_from_ledger(run_dir):
+    pytest.importorskip("matplotlib")
+    out, _ = run_dir
+    for name in ("schedule.png", "soc.png"):
+        path = out / "figures" / name
+        assert path.is_file() and path.stat().st_size > 10_000, name
+    meta = json.loads((out / "run_metadata.json").read_text(encoding="utf-8"))
+    assert "figures/schedule.png" in meta["outputs"] and "figures/soc.png" in meta["outputs"]
+    assert meta["figure_note"] is None

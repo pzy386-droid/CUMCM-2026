@@ -38,6 +38,13 @@ class ConfigError(ValueError):
     pass
 
 
+def _optional_version(name: str) -> str | None:
+    try:
+        return __import__(name).__version__
+    except ImportError:
+        return None
+
+
 def find_repo_root(start: Path) -> Path | None:
     for candidate in [start, *start.parents]:
         if (candidate / ".git").exists():
@@ -123,6 +130,12 @@ def run(config_path: Path, output_dir: Path, argv: list[str] | None = None) -> d
     ex.write_tables_md(output_dir / "tables_q1.md", rows, totals)
     if sha256_file(template_path) != template_hash:
         raise ex.ExportError("template file changed during export")
+    try:
+        from .figures_q1 import write_figures
+        figures = write_figures(output_dir / "figures", rows, params, params.delta_hours)
+        figure_note = None
+    except ImportError as exc:      # matplotlib is optional; numbers and tables come first
+        figures, figure_note = [], f"figures skipped: {exc}"
 
     solver = {
         "name": solution.solver["name"],
@@ -180,13 +193,16 @@ def run(config_path: Path, output_dir: Path, argv: list[str] | None = None) -> d
             "scipy": scipy.__version__,
             "openpyxl": openpyxl.__version__,
             "platform": platform.platform(),
+            "matplotlib": _optional_version("matplotlib"),
         },
         "source_git_commit": commit,
         "source_dirty": dirty,
         "input_path": config["input"],
         "template_path": config["template"],
         "outputs": ["schedule.csv", "summary.json", "result1.xlsx",
-                    "template_mapping.csv", "tables_q1.md", "run_metadata.json"],
+                    "template_mapping.csv", "tables_q1.md", "run_metadata.json"]
+                   + [f"figures/{name}" for name in figures],
+        "figure_note": figure_note,
     }
     ex.write_json(output_dir / "run_metadata.json", metadata)
     return summary
