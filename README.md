@@ -9,7 +9,7 @@
 - [Q3最小提纲](docs/q3/outline.md)
 - [Q2独立审查及必须修正的问题](reports/q2/astra_review.md)
 
-本交接在codex/q3-spec-review，检查点q3-spec-v1。已继承收到的Q2代码历史c10be27；Q2的旧报告不因进入本分支而自动通过审查。GitHub默认main不会自动合入本分支。
+本交接在codex/q3-handoff，检查点q3-handoff-v1。本分支只发布审查/交接材料；Q2代码c10be27已在本地审查，fable应在其现有Q2实现分支合入本交接。旧报告不因被引用而自动通过审查。GitHub默认main不会自动合入本分支。
 
 ## 第二问从这里开始
 

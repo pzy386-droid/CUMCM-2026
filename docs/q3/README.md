@@ -30,6 +30,16 @@ Q2 的 A 仍作为独立工程参照；Q3 不因 Q2 某种日内重选变差而�
 - 收到的 Q2 实现历史头：`c10be27fdf9fd76c79704763705018b31ce29e7a`。
 - Q2 正式结果对应代码：`25ab02fac19174b5736ff53530d25c1af6b654c3`，run：`main-no-intraday-year`。
 - Q2 当前仅通过交付文件层面核对，完整归档尚未到位，不能声称独立全年验收通过。
-- 本分支只新增审查、规格和手算用例，不修改 Q2 生产模型、不重算或替换 Q2 正式结果。
+- 本远端交接分支以已公开的Q2规格分支为基线，只新增审查、规格和手算用例；不包含Q2生产实现历史、不重算或替换Q2正式结果。
 
-从标签 `q3-spec-v1` 建立 `codex/q3-implementation`。先提交数据/账本和边界测试，再模型和短期预检，最后全年运行与导出。通过明确验收关卡后自行继续，无须为例行实现重复请示。
+在fable已有的 `codex/q2-implementation`（应包含c10be27）上建立 `codex/q3-implementation`，再合入交接标签 `q3-handoff-v1`。若本地没有Q2实现，先取得用户提供的Q2 bundle；不能把本交接分支误认为已含Q2代码。先提交数据/账本和边界测试，再模型和短期预检，最后全年运行与导出。通过明确验收关卡后自行继续，无须为例行实现重复请示。
+
+## Git交接命令
+
+```bash
+git fetch origin --tags
+git switch -c codex/q3-implementation codex/q2-implementation
+git merge q3-handoff-v1
+```
+
+上面以fable现有Q2实现分支为起点，保留其全部已完成工作；若Q3分支已存在，先检查状态再继续，不重建或强制覆盖。只有codex/q3-handoff和q3-handoff-v1是本次发布的文档交接引用。
