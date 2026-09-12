@@ -1,6 +1,15 @@
 # CUMCM-2026
 
-2026国赛C题协作仓库。用户已确认Q1完成，当前阶段为Q2规格交接与实现准备。
+2026国赛C题协作仓库。当前：Q2文件级审查已完成、完整运行归档待验；Q3规格交接，尚未实现Q3。
+
+## 第三问从这里开始
+
+- [Q3交接入口](docs/q3/README.md)
+- [给fable的提示词](prompts/fable_q3.md)
+- [Q3最小提纲](docs/q3/outline.md)
+- [Q2独立审查及必须修正的问题](reports/q2/astra_review.md)
+
+本交接在codex/q3-spec-review，检查点q3-spec-v1。已继承收到的Q2代码历史c10be27；Q2的旧报告不因进入本分支而自动通过审查。GitHub默认main不会自动合入本分支。
 
 ## 第二问从这里开始
 
@@ -13,7 +22,7 @@
 - [验收清单](docs/q2/acceptance.md)
 - [给fable的精简提示词](prompts/fable_q2.md)
 
-当前分支codex/q2-spec-review包含Q1完整实现及Q2交接文档，尚未实现Q2生产代码。fable从q2-spec-v1建立codex/q2-implementation。
+以上为历史Q2交接入口；当前实现及审查以docs/q2/review_addendum.md为准。
 GitHub默认main不会自动显示其他分支的新文档，请打开相应分支。
 
 ## 目录

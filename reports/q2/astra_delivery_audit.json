@@ -1,0 +1,134 @@
+{
+  "scope": "Independent ZIP/workbook/static-report audit only; full run archive absent. Fee bounds are necessary checks, not per-slot validation.",
+  "status": "passed_with_findings",
+  "checks_run": 10853,
+  "failed_checks": [],
+  "findings": [
+    {
+      "issue": "negative contract quantities at numerical tolerance",
+      "count": 142,
+      "minimum": -2.094232165461563e-08,
+      "examples": [
+        {
+          "date": "2025-02-10",
+          "slot": 49,
+          "cell": "AX11",
+          "value": -1.13686837721616e-13
+        },
+        {
+          "date": "2025-02-13",
+          "slot": 115,
+          "cell": "DL14",
+          "value": -1.13686837721616e-13
+        },
+        {
+          "date": "2025-02-14",
+          "slot": 112,
+          "cell": "DI15",
+          "value": -5.684341886080801e-14
+        },
+        {
+          "date": "2025-02-17",
+          "slot": 54,
+          "cell": "BC18",
+          "value": -8.17679826016679e-13
+        },
+        {
+          "date": "2025-02-19",
+          "slot": 82,
+          "cell": "CE20",
+          "value": -1.989519660128281e-13
+        },
+        {
+          "date": "2025-02-19",
+          "slot": 115,
+          "cell": "DL20",
+          "value": -1.989519660128281e-11
+        },
+        {
+          "date": "2025-02-28",
+          "slot": 35,
+          "cell": "AJ29",
+          "value": -1.989519660128281e-12
+        },
+        {
+          "date": "2025-03-03",
+          "slot": 87,
+          "cell": "CJ32",
+          "value": -2.788880237858393e-13
+        },
+        {
+          "date": "2025-03-06",
+          "slot": 83,
+          "cell": "CF35",
+          "value": -1.097077984013595e-11
+        },
+        {
+          "date": "2025-03-12",
+          "slot": 41,
+          "cell": "AP41",
+          "value": -8.645455563634202e-12
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "g": 20518319.538927253,
+    "gcost": 13901286.64409736,
+    "cost": 15417242.511849152,
+    "e": 320056.7901469266,
+    "c": 4616799.339575088,
+    "d": 3740460.5889940197,
+    "spill": 2022848.0835264432
+  },
+  "max_day_soc_residual": 1.4551915228366852e-11,
+  "selected_days": {
+    "2025-03-20": {
+      "planned_grid_kwh": 59732.386150854785,
+      "planned_cost_yuan": 43849.889469255206,
+      "total_cost_yuan": 45962.43155256563,
+      "emergency_kwh": 461.18481488590754,
+      "soc_start": 7830.64339544217,
+      "soc_end": 3570.943902552805
+    },
+    "2025-06-21": {
+      "planned_grid_kwh": 40419.29107069778,
+      "planned_cost_yuan": 24772.65530094453,
+      "total_cost_yuan": 27722.06386106009,
+      "emergency_kwh": 966.1682080649488,
+      "soc_start": 5662.266598672713,
+      "soc_end": 10557.98803418677
+    },
+    "2025-09-23": {
+      "planned_grid_kwh": 65415.726373330435,
+      "planned_cost_yuan": 45185.19394121362,
+      "total_cost_yuan": 51459.7861308022,
+      "emergency_kwh": 1378.9542071791175,
+      "soc_start": 2972.39751070286,
+      "soc_end": 2277.01601818221
+    },
+    "2025-12-21": {
+      "planned_grid_kwh": 92682.28868794156,
+      "planned_cost_yuan": 64439.70780486001,
+      "total_cost_yuan": 65833.21172735418,
+      "emergency_kwh": 345.83172559934013,
+      "soc_start": 9887.126708239737,
+      "soc_end": 8055.575117887803
+    }
+  },
+  "fork_mean_terminal_soc_difference": {
+    "36": {
+      "resolve": 8.988309355598828,
+      "reselect": -101.51262913185164
+    },
+    "72": {
+      "resolve": 188.33439477510106,
+      "reselect": 286.56798992956226
+    },
+    "108": {
+      "resolve": 1.82889336953022,
+      "reselect": 99.80603786668439
+    }
+  },
+  "checks_passed": 10853
+}

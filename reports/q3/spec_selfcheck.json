@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "checks": 19,
+  "scope": "Specification arithmetic/time examples only; Q3 production implementation does not yet exist.",
+  "cases_sha256": "9848d3ed9271926a1fe40cd65a50d1066d0e9073dc96ca00ee05494364b42824"
+}

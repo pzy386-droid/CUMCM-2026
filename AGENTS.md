@@ -1,6 +1,8 @@
 # 协作边界
 
-- 用户已确认Q1完成，当前实施Q2；不提前实施Q3—Q4。
+- 用户已确认Q1完成，当前进行Q2独立审查与Q3实施交接；允许实现Q3，不提前实施Q4。
+- Q3最新规格在docs/q3/README.md；Q2最新工程口径在docs/q2/review_addendum.md，独立审查在reports/q2/astra_review.md。
+- 审查方维护docs/q3/、review/和tests/review/；fable实现src/microgrid/q3*、生产测试、reports/q3/实现说明与独立run产物。
 - Q2具体规格见docs/q2/README.md及关联文件；原题与附件优先，实质矛盾列证据交回审查。
 - 审查负责人维护规格docs/q2/、review/、tests/review/。fable负责src/microgrid/、生产测试、outputs/q2/和reports/q2/实现说明；允许补充实现文档，但不得私改锁定规格来让测试过关。
 - 保留Q1已完成结果；公共模块变化后跑Q1回归。第一问代码审查建议不能被描述成已经全部修复。

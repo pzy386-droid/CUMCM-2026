@@ -1,0 +1,25 @@
+{
+  "scope": "Independent hand-calculated specification cases; not evidence that Q3 implementation exists or passes.",
+  "settlement": "each delivered slot, final effective a versus immutable g0, once",
+  "cases": [
+    {"name":"unchanged", "p":1, "g":10, "a":10, "e":0, "kappa":0.5, "expected_cost":10},
+    {"name":"emergency_is_five_not_four_or_six", "p":1, "g":10, "a":10, "e":2, "kappa":0.5, "expected_cost":20},
+    {"name":"increase", "p":1, "g":10, "a":14, "e":0, "kappa":0.5, "expected_cost":16},
+    {"name":"increase_and_emergency", "p":1, "g":10, "a":14, "e":2, "kappa":0.5, "expected_cost":26},
+    {"name":"decrease_without_refund_general_fee_function", "p":1, "g":10, "a":6, "e":0, "kappa":0.5, "expected_cost":12},
+    {"name":"decrease_with_refund", "p":1, "g":10, "a":6, "e":0, "kappa":-0.5, "expected_cost":8},
+    {"name":"cancel_all_no_refund_general_fee_function", "p":1, "g":10, "a":0, "e":0, "kappa":0.5, "expected_cost":15},
+    {"name":"cancel_all_refund", "p":1, "g":10, "a":0, "e":0, "kappa":-0.5, "expected_cost":5},
+    {"name":"delivery_price_not_issue_price", "p":0.4, "g":10, "a":14, "e":2, "kappa":0.5, "expected_cost":10.4}
+  ],
+  "revision_case": {"p":1,"g":10,"versions":[{"issue_hour":6,"a":14},{"issue_hour":12,"a":12}],"delivery_hour":13,"e":0,"kappa":0.5,"expected_effective_a":12,"expected_cost":13},
+  "freeze_case": {"p":1,"g":10,"versions":[{"issue_hour":6,"a":14},{"issue_hour":12,"a":12}],"delivery_hour":8,"e":0,"kappa":0.5,"expected_effective_a":14,"expected_cost":16},
+  "timestamps": [
+    {"issued_at":"2025-03-20T06:00:00","lead_hour":1,"expected_valid_at":"2025-03-20T07:00:00"},
+    {"issued_at":"2025-03-20T06:00:00","lead_hour":24,"expected_valid_at":"2025-03-21T06:00:00"},
+    {"issued_at":"2025-03-20T18:00:00","lead_hour":7,"expected_valid_at":"2025-03-21T01:00:00"},
+    {"issued_at":"2025-12-31T18:00:00","lead_hour":24,"expected_valid_at":"2026-01-01T18:00:00"}
+  ],
+  "first_adjustable_slots_1based": {"6":37,"12":73,"18":109},
+  "interpolation_case": {"anchor_kw":60,"next_hour_kw":120,"minutes_after_issue":10,"expected_power_kw":70,"expected_energy_kwh":11.666666666666666}
+}

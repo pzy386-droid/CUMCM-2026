@@ -1,0 +1,11 @@
+{
+  "tests": "93",
+  "errors": "0",
+  "failures": "0",
+  "skipped": "1",
+  "time": "164.025",
+  "passed": 92,
+  "source_commit": "c10be27fdf9fd76c79704763705018b31ce29e7a",
+  "scope": "Rerun of delivered Q1/Q2 test suite; not full-year independent acceptance",
+  "skip_reason": "Q1 figure test: matplotlib absent in local review environment"
+}
