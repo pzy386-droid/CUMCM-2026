@@ -10,7 +10,7 @@
 
 1. `data/raw/C题.pdf` 全部三页；`data/raw/附件1.xlsx`—`附件4.xlsx`；`data/templates/` 五份原模板。逐工作表扫描，不把列标题当数据，不以只看前几行代替全量结构核验。
 2. `docs/references/融合方案与审查.md`：原始统一框架，特别是 C1、C4、C6—C11。
-3. `docs/q2/review_addendum.md` 和现有 Q2 方案 A；`docs/q3/` 的模型、信息时序与输出契约；fable 自己 Q3 分支中的实际代码和配置。
+3. `docs/q2/review_addendum.md` 和现有 Q2 方案 A；`docs/q3/` 的模型、信息时序与输出契约；`reports/q3/astra_final_review.md` 的最终交付审查与修复要求；fable 自己 Q3 分支中的实际代码和配置。
 4. 本目录 `model.md` → `implementation_and_acceptance.md` → `outline.md`。
 5. `fable_prompt.md` 是任务摘要，不能替代完整规格。
 

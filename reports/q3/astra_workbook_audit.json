@@ -1,0 +1,295 @@
+{
+  "scope": "Independent raw-cell scan and workbook aggregation; NOT a full ledger/causality acceptance.",
+  "workbook_sha256": "ab871495473dc5c61d10f23ef1e2514fa01c6ddd3412f52f246a44f2a74987e0",
+  "raw_scan": [
+    {
+      "path": "data\\raw\\附件1.xlsx",
+      "sha256": "66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 145,
+          "columns": 4,
+          "nonempty": 580,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data\\raw\\附件2.xlsx",
+      "sha256": "2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72",
+      "sheets": [
+        {
+          "name": "小区负载",
+          "rows": 366,
+          "columns": 145,
+          "nonempty": 53070,
+          "nonfinite": 0
+        },
+        {
+          "name": "光伏发电实际功率",
+          "rows": 366,
+          "columns": 145,
+          "nonempty": 53070,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data\\raw\\附件3.xlsx",
+      "sha256": "8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 1461,
+          "columns": 26,
+          "nonempty": 36891,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data\\raw\\附件4.xlsx",
+      "sha256": "20e9c93aeab5e8e21ae4dd15587f9e190f7408692504c1319598461cd654fe71",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "rows": 366,
+          "columns": 145,
+          "nonempty": 53070,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data\\templates\\result1.xlsx",
+      "sha256": "28360e0974e7d6065394a8aba4e14a86773ae0036cc7d3ea1b211b515b03d688",
+      "sheets": [
+        {
+          "name": "计划购电量",
+          "rows": 145,
+          "columns": 2,
+          "nonempty": 146,
+          "nonfinite": 0
+        },
+        {
+          "name": "充放电量",
+          "rows": 7,
+          "columns": 5,
+          "nonempty": 13,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data\\templates\\result2.xlsx",
+      "sha256": "1c26494cfc6d754e0bd9bff7e13e1126a73d2d2da6c5336eb251d89b9a1a1a47",
+      "sheets": [
+        {
+          "name": "计划购电量",
+          "rows": 335,
+          "columns": 147,
+          "nonempty": 481,
+          "nonfinite": 0
+        },
+        {
+          "name": "充放电量",
+          "rows": 20,
+          "columns": 6,
+          "nonempty": 39,
+          "nonfinite": 0
+        },
+        {
+          "name": "紧急购电量",
+          "rows": 11,
+          "columns": 3,
+          "nonempty": 9,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data\\templates\\result3.xlsx",
+      "sha256": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "sheets": [
+        {
+          "name": "计划购电量",
+          "rows": 335,
+          "columns": 147,
+          "nonempty": 481,
+          "nonfinite": 0
+        },
+        {
+          "name": "调整购电量",
+          "rows": 335,
+          "columns": 147,
+          "nonempty": 481,
+          "nonfinite": 0
+        },
+        {
+          "name": "充放电量",
+          "rows": 26,
+          "columns": 6,
+          "nonempty": 48,
+          "nonfinite": 0
+        },
+        {
+          "name": "紧急购电量",
+          "rows": 11,
+          "columns": 3,
+          "nonempty": 9,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data\\templates\\result4-2.xlsx",
+      "sha256": "1c26494cfc6d754e0bd9bff7e13e1126a73d2d2da6c5336eb251d89b9a1a1a47",
+      "sheets": [
+        {
+          "name": "计划购电量",
+          "rows": 335,
+          "columns": 147,
+          "nonempty": 481,
+          "nonfinite": 0
+        },
+        {
+          "name": "充放电量",
+          "rows": 20,
+          "columns": 6,
+          "nonempty": 39,
+          "nonfinite": 0
+        },
+        {
+          "name": "紧急购电量",
+          "rows": 11,
+          "columns": 3,
+          "nonempty": 9,
+          "nonfinite": 0
+        }
+      ]
+    },
+    {
+      "path": "data\\templates\\result4-3.xlsx",
+      "sha256": "c59da470cabd0be23f602c95c8aa9d11ec224a0cdac216b3e1f218e65d006bdc",
+      "sheets": [
+        {
+          "name": "计划购电量",
+          "rows": 335,
+          "columns": 147,
+          "nonempty": 481,
+          "nonfinite": 0
+        },
+        {
+          "name": "调整购电量",
+          "rows": 335,
+          "columns": 147,
+          "nonempty": 481,
+          "nonfinite": 0
+        },
+        {
+          "name": "充放电量",
+          "rows": 26,
+          "columns": 6,
+          "nonempty": 48,
+          "nonfinite": 0
+        },
+        {
+          "name": "紧急购电量",
+          "rows": 11,
+          "columns": 3,
+          "nonempty": 9,
+          "nonfinite": 0
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "min_contract": 0.0,
+    "max_decrease_kwh": 0.0,
+    "first_six_hours_max_change": 0.0,
+    "max_plan_fee_error_yuan": 5.093170329928398e-11,
+    "max_g_total_error": 5.820766091346741e-11,
+    "max_a_total_error": 5.820766091346741e-11,
+    "max_daily_SOC_residual_kwh": 2.000888343900442e-11,
+    "max_cross_day_SOC_residual_kwh": 0.0,
+    "min_endpoint_SOC_kwh": 1200.0,
+    "max_endpoint_SOC_kwh": 10800.0,
+    "max_four_hour_charge_kwh": 9426.016583333332,
+    "max_four_hour_discharge_kwh": 7991.444781931152,
+    "emergency_fee_within_event_price_bounds": true,
+    "min_inferred_daily_spill_kwh": 67.04819668314303
+  },
+  "totals": {
+    "total_cost_yuan": 14899992.9697583,
+    "planned_cost_yuan": 13810986.097799517,
+    "adjustment_cost_yuan": 276938.90260506107,
+    "emergency_cost_yuan_inferred_from_total": 812067.9693537203,
+    "emergency_kwh": 203163.49622868598,
+    "g0_kwh": 20386589.808613405,
+    "effective_contract_kwh": 20663335.061689846,
+    "increase_kwh": 276745.2530764408,
+    "charge_kwh": 4826616.779178106,
+    "discharge_kwh": 3910605.8473668396,
+    "spill_kwh_inferred": 2011298.1311405972,
+    "SOC_start": 8603.420461497597,
+    "SOC_end": 7440.913536416268,
+    "events": 3917
+  },
+  "forecast_rmse_kw": {
+    "06-12": {
+      "persistence_lag1": 549.6146262170085,
+      "vintage_0": 484.66923747150076,
+      "vintage_6": 269.62826408139364
+    },
+    "12-18": {
+      "persistence_lag1": 510.3723243255163,
+      "vintage_0": 589.8209328501632,
+      "vintage_6": 382.4828267767177,
+      "vintage_12": 192.7780920458838
+    },
+    "18-24": {
+      "persistence_lag1": 11.9724489190583,
+      "vintage_0": 46.242041132539654,
+      "vintage_6": 43.98719550189462,
+      "vintage_12": 43.41036820620373,
+      "vintage_18": 42.92335290156186
+    }
+  },
+  "mean_daily_forecast_rmse_kw": {
+    "06-12": {
+      "persistence_lag1": 494.682549667942,
+      "vintage_0": 433.5556556499995,
+      "vintage_6": 249.73231626866252
+    },
+    "12-18": {
+      "persistence_lag1": 469.28805696546016,
+      "vintage_0": 523.0339729757603,
+      "vintage_6": 348.41432994442584,
+      "vintage_12": 183.04661939172772
+    },
+    "18-24": {
+      "persistence_lag1": 6.396342456648424,
+      "vintage_0": 30.301816243062643,
+      "vintage_6": 28.909996938826094,
+      "vintage_12": 28.77460430726283,
+      "vintage_18": 28.454598503360707
+    }
+  },
+  "max_forecast_report_difference": 66.7869598744029,
+  "PV_after_18_kwh_submission": 39007.33113333333,
+  "PV_after_18_max_kw": 1062.3324,
+  "specified_day_total_costs": {
+    "2025-03-20": 48736.34338170123,
+    "2025-06-21": 26720.29875246213,
+    "2025-09-23": 52817.41781202296,
+    "2025-12-21": 74362.92065643909
+  },
+  "unverified": [
+    "per-slot SOC, modes and emergency cost",
+    "ledger-to-input exact binding",
+    "January continuation",
+    "policy/contract snapshots and guard scores",
+    "run/source provenance beyond supplied manifest"
+  ]
+}

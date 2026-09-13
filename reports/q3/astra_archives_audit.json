@@ -1,0 +1,381 @@
+{
+  "F2-year": {
+    "status": "passed_ledger_and_saved_execution",
+    "files_hash_checked": 1481,
+    "slots": 52560,
+    "source_commit": "fe201df98f8acf4012d1f6ff765c8174766f3f90",
+    "source_dirty": false,
+    "excel_numeric_cells_checked": 106121,
+    "forecasts_reconstructed_independently": true,
+    "residual_max": {
+      "energy": 4.547473508864641e-13,
+      "soc": 1.0231815394945443e-12,
+      "cross_slot_soc": 0.0,
+      "planned_cost": 0.0,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 0.0,
+      "total_cost": 0.0
+    },
+    "policy_raw_max_difference": 2.8421709430404007e-13,
+    "physical_projection_max_difference": 1.142197447734361e-12,
+    "full_period": {
+      "cost": 17081465.70849411,
+      "planned": 15408441.370567236,
+      "adjust": 329206.44605577935,
+      "emergency_cost": 1343817.8918710938,
+      "emergency_kwh": 332835.9116713965,
+      "S_start": 6000.0,
+      "S_end": 7440.913536416268
+    },
+    "submission": {
+      "cost": 14899992.969758298,
+      "planned": 13810986.097799517,
+      "adjust": 276938.90260506107,
+      "emergency_cost": 812067.9693537198,
+      "emergency_kwh": 203163.49622868624,
+      "S_start": 8603.420461497597,
+      "S_end": 7440.913536416268
+    },
+    "submission_guard_actions": {
+      "06:00 accept": 258,
+      "12:00 accept": 284,
+      "18:00 keep": 225,
+      "06:00 keep": 76,
+      "12:00 keep": 50,
+      "18:00 accept": 108,
+      "18:00 fallback": 1
+    },
+    "tail_mode_violation_sum_reported": 0,
+    "solver_fallbacks": [
+      {
+        "date": "2025-07-06",
+        "stage": "18:00",
+        "message": "solution violates constraints by 7.895e-04"
+      },
+      {
+        "date": "2025-07-08",
+        "stage": "00:00",
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+      },
+      {
+        "date": "2025-11-05",
+        "stage": "00:00",
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+      },
+      {
+        "date": "2025-12-21",
+        "stage": "00:00",
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+      },
+      {
+        "date": "2025-12-22",
+        "stage": "00:00",
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+      }
+    ],
+    "limits": "Does not establish optimality or rerun every MILP/guard tail; checks saved policy execution and information timestamps/source dates.",
+    "candidate_violations_above_1e_minus6": [
+      {
+        "date": "2025-01-06",
+        "stage": "12:00",
+        "violation": 5.300958764934194e-05,
+        "guard_action": "keep",
+        "fallback": "False"
+      },
+      {
+        "date": "2025-07-02",
+        "stage": "12:00",
+        "violation": 6.754123365482201e-06,
+        "guard_action": "accept",
+        "fallback": "False"
+      },
+      {
+        "date": "2025-07-06",
+        "stage": "18:00",
+        "violation": 0.000789532367434731,
+        "guard_action": "fallback",
+        "fallback": "True"
+      },
+      {
+        "date": "2025-07-14",
+        "stage": "18:00",
+        "violation": 2.7578234893965714e-05,
+        "guard_action": "accept",
+        "fallback": "False"
+      },
+      {
+        "date": "2025-07-28",
+        "stage": "12:00",
+        "violation": 1.0611207640565112e-05,
+        "guard_action": "accept",
+        "fallback": "False"
+      },
+      {
+        "date": "2025-11-15",
+        "stage": "06:00",
+        "violation": 8.198219299345729e-05,
+        "guard_action": "keep",
+        "fallback": "False"
+      }
+    ]
+  },
+  "F1-year": {
+    "status": "passed_ledger_and_saved_execution",
+    "files_hash_checked": 1481,
+    "slots": 52560,
+    "source_commit": "fe201df98f8acf4012d1f6ff765c8174766f3f90",
+    "source_dirty": false,
+    "excel_numeric_cells_checked": 106072,
+    "forecasts_reconstructed_independently": true,
+    "residual_max": {
+      "energy": 4.547473508864641e-13,
+      "soc": 1.0231815394945443e-12,
+      "cross_slot_soc": 0.0,
+      "planned_cost": 0.0,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 0.0,
+      "total_cost": 0.0
+    },
+    "policy_raw_max_difference": 2.5579538487363607e-13,
+    "physical_projection_max_difference": 1.1368683772161603e-12,
+    "full_period": {
+      "cost": 17667040.176895555,
+      "planned": 15427633.064691115,
+      "adjust": 0.0,
+      "emergency_cost": 2239407.1122044413,
+      "emergency_kwh": 522957.6801884207,
+      "S_start": 6000.0,
+      "S_end": 7354.45723432284
+    },
+    "submission": {
+      "cost": 15384589.732553478,
+      "planned": 13829191.65523538,
+      "adjust": 0.0,
+      "emergency_cost": 1555398.0773180975,
+      "emergency_kwh": 365405.3394613473,
+      "S_start": 9223.639325668271,
+      "S_end": 7354.45723432284
+    },
+    "submission_guard_actions": {
+      "06:00 accept": 177,
+      "12:00 accept": 229,
+      "18:00 keep": 250,
+      "06:00 keep": 157,
+      "12:00 keep": 105,
+      "18:00 accept": 84
+    },
+    "tail_mode_violation_sum_reported": 0,
+    "solver_fallbacks": [
+      {
+        "date": "2025-10-07",
+        "stage": "00:00",
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+      },
+      {
+        "date": "2025-11-05",
+        "stage": "00:00",
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+      },
+      {
+        "date": "2025-11-18",
+        "stage": "00:00",
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+      }
+    ],
+    "limits": "Does not establish optimality or rerun every MILP/guard tail; checks saved policy execution and information timestamps/source dates.",
+    "candidate_violations_above_1e_minus6": []
+  },
+  "F0-year": {
+    "status": "passed_ledger_and_saved_execution",
+    "files_hash_checked": 1481,
+    "slots": 52560,
+    "source_commit": "198b00963927de8834da5a40a05b64decac4a0e7",
+    "source_dirty": false,
+    "excel_numeric_cells_checked": 105794,
+    "forecasts_reconstructed_independently": true,
+    "residual_max": {
+      "energy": 4.547473508864641e-13,
+      "soc": 1.0231815394945443e-12,
+      "cross_slot_soc": 0.0,
+      "planned_cost": 0.0,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 0.0,
+      "total_cost": 0.0
+    },
+    "policy_raw_max_difference": 4.547473508864641e-13,
+    "physical_projection_max_difference": 1.1368683772161603e-12,
+    "full_period": {
+      "cost": 17900987.985716924,
+      "planned": 15460610.37515549,
+      "adjust": 0.0,
+      "emergency_cost": 2440377.6105614346,
+      "emergency_kwh": 560757.3880918027,
+      "S_start": 6000.0,
+      "S_end": 7620.824794841433
+    },
+    "submission": {
+      "cost": 15592764.555584263,
+      "planned": 13855166.33857771,
+      "adjust": 0.0,
+      "emergency_cost": 1737598.217006553,
+      "emergency_kwh": 403476.83717684995,
+      "S_start": 7811.040229175685,
+      "S_end": 7620.824794841433
+    },
+    "submission_guard_actions": {
+      "06:00 keep": 227,
+      "12:00 accept": 185,
+      "18:00 accept": 42,
+      "18:00 keep": 292,
+      "12:00 keep": 149,
+      "06:00 accept": 107
+    },
+    "tail_mode_violation_sum_reported": 0,
+    "solver_fallbacks": [
+      {
+        "date": "2025-07-30",
+        "stage": "00:00",
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+      },
+      {
+        "date": "2025-11-05",
+        "stage": "00:00",
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+      },
+      {
+        "date": "2025-12-21",
+        "stage": "00:00",
+        "message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)"
+      }
+    ],
+    "limits": "Does not establish optimality or rerun every MILP/guard tail; checks saved policy execution and information timestamps/source dates.",
+    "candidate_violations_above_1e_minus6": []
+  },
+  "baseline-year": {
+    "status": "passed_ledger_and_saved_execution",
+    "files_hash_checked": 1471,
+    "slots": 52560,
+    "source_commit": "b12567d9d6ea99bc9a85e391ceed4b73898f258c",
+    "source_dirty": true,
+    "excel_numeric_cells_checked": 107248,
+    "forecasts_reconstructed_independently": true,
+    "residual_max": {
+      "energy": 4.547473508864641e-13,
+      "soc": 1.0231815394945443e-12,
+      "cross_slot_soc": 0.0,
+      "planned_cost": 0.0,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 0.0,
+      "total_cost": 0.0
+    },
+    "policy_raw_max_difference": 0.0,
+    "physical_projection_max_difference": 1.1368683772161603e-12,
+    "full_period": {
+      "cost": 18490939.67199035,
+      "planned": 13818019.406977646,
+      "adjust": 0.0,
+      "emergency_cost": 4672920.265012704,
+      "emergency_kwh": 1007840.2116370362,
+      "S_start": 6000.0,
+      "S_end": 8594.988566851855
+    },
+    "submission": {
+      "cost": 16151251.53509542,
+      "planned": 12336853.884480374,
+      "adjust": 0.0,
+      "emergency_cost": 3814397.6506150467,
+      "emergency_kwh": 811262.6996802117,
+      "S_start": 8482.766385,
+      "S_end": 8594.988566851855
+    },
+    "submission_guard_actions": {},
+    "tail_mode_violation_sum_reported": 0,
+    "solver_fallbacks": [],
+    "limits": "Does not establish optimality or rerun every MILP/guard tail; checks saved policy execution and information timestamps/source dates.",
+    "candidate_violations_above_1e_minus6": []
+  },
+  "precheck-F2-20": {
+    "status": "passed_ledger_and_saved_execution",
+    "files_hash_checked": 89,
+    "slots": 2880,
+    "source_commit": "fbfba5943dc0832a30bda7bfd53c07dd0c921917",
+    "source_dirty": false,
+    "excel_numeric_cells_checked": 0,
+    "forecasts_reconstructed_independently": true,
+    "residual_max": {
+      "energy": 4.547473508864641e-13,
+      "soc": 9.094947017729282e-13,
+      "cross_slot_soc": 0.0,
+      "planned_cost": 0.0,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 0.0,
+      "total_cost": 0.0
+    },
+    "policy_raw_max_difference": 2.2737367544323206e-13,
+    "physical_projection_max_difference": 1.0871303857129533e-12,
+    "full_period": {
+      "cost": 1598841.4321843756,
+      "planned": 1035925.3606940375,
+      "adjust": 44270.32954934038,
+      "emergency_cost": 518645.74194099754,
+      "emergency_kwh": 126957.46000624727,
+      "S_start": 6000.0,
+      "S_end": 8041.727175609587
+    },
+    "submission": null,
+    "submission_guard_actions": {},
+    "tail_mode_violation_sum_reported": 0,
+    "solver_fallbacks": [
+      {
+        "date": "2025-01-06",
+        "stage": "12:00",
+        "message": "solution violates constraints by 5.301e-05"
+      }
+    ],
+    "limits": "Does not establish optimality or rerun every MILP/guard tail; checks saved policy execution and information timestamps/source dates.",
+    "candidate_violations_above_1e_minus6": [
+      {
+        "date": "2025-01-06",
+        "stage": "12:00",
+        "violation": 5.300958764934194e-05,
+        "guard_action": "fallback",
+        "fallback": "True"
+      }
+    ]
+  },
+  "refund-20": {
+    "status": "passed_ledger_and_saved_execution",
+    "files_hash_checked": 89,
+    "slots": 2880,
+    "source_commit": "272c3fe6fe168b7fc14170d3f2e241aefed1e490",
+    "source_dirty": false,
+    "excel_numeric_cells_checked": 0,
+    "forecasts_reconstructed_independently": true,
+    "residual_max": {
+      "energy": 4.547473508864641e-13,
+      "soc": 9.094947017729282e-13,
+      "cross_slot_soc": 0.0,
+      "planned_cost": 0.0,
+      "adjustment_cost": 0.0,
+      "emergency_cost": 0.0,
+      "total_cost": 0.0
+    },
+    "policy_raw_max_difference": 2.5579538487363607e-13,
+    "physical_projection_max_difference": 1.0373923942097463e-12,
+    "full_period": {
+      "cost": 1587829.0814467485,
+      "planned": 1039757.1954445171,
+      "adjust": 29185.695873129855,
+      "emergency_cost": 518886.1901291017,
+      "emergency_kwh": 125608.85896415998,
+      "S_start": 6000.0,
+      "S_end": 6948.8038466666685
+    },
+    "submission": null,
+    "submission_guard_actions": {},
+    "tail_mode_violation_sum_reported": 0,
+    "solver_fallbacks": [],
+    "limits": "Does not establish optimality or rerun every MILP/guard tail; checks saved policy execution and information timestamps/source dates.",
+    "candidate_violations_above_1e_minus6": []
+  }
+}

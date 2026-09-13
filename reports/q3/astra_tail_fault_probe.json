@@ -1,0 +1,7 @@
+{
+  "invalid_tail_with_SOC_and_energy_violations_returned_value": 0.0,
+  "invalid_tail_rejected": false,
+  "tail_with_mode_violation_returned_guard_score": 123.0,
+  "tail_mode_violation_guard_rejected": false,
+  "meaning": "Confirmed missing failure checks, not evidence that the official executed ledger violates physics."
+}

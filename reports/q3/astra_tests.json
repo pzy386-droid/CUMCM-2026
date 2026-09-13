@@ -1,0 +1,17 @@
+{
+  "command": "python -m pytest -q",
+  "checkout_commit": "ff2efbf",
+  "passed": 123,
+  "failed": 0,
+  "warnings": 2,
+  "elapsed_seconds": 566.61,
+  "warning_detail": "Q1 figure export: SimHei missing Unicode minus glyph U+2212",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "openpyxl": "3.1.5",
+    "pytest": "9.1.1"
+  },
+  "scope": "Existing full test suite; independent tail fault injection separately confirms uncovered rejection gaps. No full-year MILP rerun."
+}
